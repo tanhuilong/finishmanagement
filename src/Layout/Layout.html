@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>about是登入页，登入后跳转到home页面,home页面为其他页面的主页面</h1>
+    <div class="home-page">
+      <el-container>
+        <el-header width="50px"> 头部高50px</el-header>
+        <el-container>
+          <el-aside width="170px"
+            >侧边栏宽170px,高500px,为列表。<br />
+            列表：1（一级列表）
+            业绩管理：使用路由在main中显示management文件下managementzhu组件<br />
+            1.1（二级列表）
+            运营管理：使用路由在main中显示management文件下performance文件下zhuyao组件及liebao处理表格信息<br />
+            2（一级列表）
+            系统管理：使用路由在main中显示Operation文件下Operation组件<br />
+            3（一级列表）
+            业绩报销：使用路由在main中显示System文件下Systemzhu组件<br />
+            3.1（二级列表）
+            用户管理：使用路由在main中显示System文件下Usermanagement文件下Userzhu组件<br />
+            3.2（二级列表）
+            角色权限管理：使用路由在main中显示System文件下Role文件下Rolezhu组件及Rolelie处理表格信息<br />
+          </el-aside>
+          <el-main>Main在点击列表触发后通过路由显示对应的组件</el-main>
+        </el-container>
+      </el-container>
+    </div>
+  </body>
+</html>
